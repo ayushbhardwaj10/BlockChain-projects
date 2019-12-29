@@ -18,3 +18,24 @@ Finally, by clicking "conversion", user will get the converted amount.
 Disclaimer : In solidity, float/double data types are not provided till yet. If you want to perform this calculation for ether you should use the different units of ether.
 
 For more : http://solidity.readthedocs.io/en/develop/units-and-global-variables.html#ether-units
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+module.exports = {
+  networks: {
+    development: {
+      host: "127.0.0.1",
+      port: 8545,
+      network_id: "*"
+    }
+  },
+
+  mocha: {
+  },
+
+  compilers: {
+    solc: {
+      version: "0.5.0",
+      docker: true
+    }
+  }
+}
